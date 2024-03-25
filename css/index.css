@@ -1,0 +1,75 @@
+
+
+.logo {
+    max-width: 50px;
+    height: auto; 
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a {
+    margin-left: 20px;
+}
+nav a:hover {
+    color:blue;
+}
+
+.search-bar img {
+    width: 35px; /* Ajustez la taille du logo selon vos besoins */
+    
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.search-bar input[type="text"] {
+    width: 150px; /* Ajustez la largeur de la zone de texte selon vos besoins */
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background-color: #f5f5f5; /* Couleur de fond de la zone de texte */
+}
+.search-bar button:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+/* Styles communs pour le bouton de recherche */
+.search-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white;
+    cursor: pointer;
+}
+
+/* Styles pour le texte "Rechercher" sur desktop */
+.desktop {
+    display: inline; /* Affiche le texte "Rechercher" sur desktop */
+}
+
+/* Styles pour l'icône de loupe sur mobile */
+.mobile {
+    display: none; /* Cache l'icône de loupe par défaut sur desktop */
+}
+
+/* Media query pour les écrans de taille maximale de 600 pixels (typiquement les téléphones) */
+@media only screen and (max-width: 600px) {
+    /* Cache le texte "Rechercher" sur mobile */
+    .desktop {
+        display: none;
+    }
+    /* Affiche l'icône de loupe sur mobile */
+    .mobile {
+        display: inline;
+    }
+    .search-bar .search-button, .search-bar .search-button:hover  {
+        background-color: transparent; /* Désactive la couleur de fond */
+        }
+}
