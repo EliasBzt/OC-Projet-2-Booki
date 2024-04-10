@@ -1,8 +1,11 @@
-
-
 .logo {
-    max-width: 50px;
+    max-width: 60px;
     height: auto; 
+    margin-top: 10px;
+
+}
+.header {
+    margin-bottom: 40px;
 }
 nav {
     display: flex;
@@ -16,60 +19,251 @@ nav a {
 nav a:hover {
     color:blue;
 }
-
-.search-bar img {
-    width: 35px; /* Ajustez la taille du logo selon vos besoins */
-    
-}
 .search-bar {
+    width: 377px;
+    height: 49px;
+    border-radius: 15px;
+    border: 1px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     display: flex;
-    align-items: center;
-    margin-top: 20px;
+    background-color: #F2F2F2;
+    border: none;
+
 }
 
+.icon-container {
+    width: 13%;
+    height: 49px;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    border: none;
+}
 
 .search-bar input[type="text"] {
-    width: 150px; /* Ajustez la largeur de la zone de texte selon vos besoins */
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    font-size: 16px;
-    background-color: #f5f5f5; /* Couleur de fond de la zone de texte */
-}
-.search-bar button:hover {
-    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+    width: 52%; /* Ajustez la largeur de la zone de texte selon vos besoins */
+    background-color: #FFFFFF; /* Couleur de fond de la zone de texte */
+    color: #000000;
+    border-color: #F2F2F2;
+    border-width: 1px;
+    
+
 }
 /* Styles communs pour le bouton de recherche */
 .search-button {
-    padding: 10px 20px;
-    border-radius: 25px;
+    width: 132px;
+    height: 49px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
     border: none;
-    background-color: #007bff; /* Couleur de fond du bouton */
-    color: white;
-    cursor: pointer;
+    color: #FFFFFF;
+}
+.filtres button:hover {
+    background: #DEEBFF;
 }
 
-/* Styles pour le texte "Rechercher" sur desktop */
-.desktop {
-    display: inline; /* Affiche le texte "Rechercher" sur desktop */
+.hebergements-and-populaires {
+    margin-top: 35px;
 }
 
-/* Styles pour l'icône de loupe sur mobile */
-.mobile {
-    display: none; /* Cache l'icône de loupe par défaut sur desktop */
+.hebergement {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+.activite {
+    position: relative;
+    color: #000;
+    text-decoration: none;
 }
 
-/* Media query pour les écrans de taille maximale de 600 pixels (typiquement les téléphones) */
-@media only screen and (max-width: 600px) {
-    /* Cache le texte "Rechercher" sur mobile */
-    .desktop {
-        display: none;
-    }
-    /* Affiche l'icône de loupe sur mobile */
-    .mobile {
-        display: inline;
-    }
-    .search-bar .search-button, .search-bar .search-button:hover  {
-        background-color: transparent; /* Désactive la couleur de fond */
-        }
+.activite::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    width: 63px;
+    height: 2px;
+    opacity: 0;
+    background: #0065FC;
+}
+.activite:hover::before {
+    opacity: 1;
+}
+
+
+/* Bordure bleue au-dessus en version desktop */
+.hebergement::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    width: 113px;
+    height: 2px;
+    opacity: 0;
+    background: #0065FC;
+}
+.hebergement:hover::before {
+    opacity: 1;
+}
+.filtres {
+    width: 758px;
+    height: 50px;
+    gap: 15px;
+    opacity: 0px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+
+}
+
+.filtres-boutons  {
+    display: flex;
+    gap: 15px;
+
+}
+
+.economique {
+    width: 173px;
+    height: 50px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px;
+    opacity: 0px;    
+    border: 2px solid #D9D9D9;
+    background-color: #FFFFFF;
+
+}
+.familial {
+    width: 134px;
+    height: 50px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px;
+    opacity: 0px;
+    border: 2px solid #D9D9D9;
+    background-color: #FFFFFF;
+
+}
+
+.romantique {
+    width: 170px;
+    height: 50px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px;
+    opacity: 0px;      
+    border: 2px solid #D9D9D9;
+    background-color: #FFFFFF;
+
+}
+.pepites{
+    width: 170px;
+    height: 50px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px;
+    opacity: 0px;        
+    border: 2px solid #D9D9D9;
+    background-color: #FFFFFF;
+
+}
+
+.hebergement-card {
+    width: 100%;
+    height: 207.25px;
+    gap: 30px;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.hebergement-card a {
+    width: 31%;
+}
+
+.hebergement-card img {
+    width: 95%;
+    height: 124px;
+    border: 6px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hebergement-card .card {
+    width: 100%;
+    height: 207.25px;
+    padding: 0px 0px 15px 0px;
+    gap: 4px;
+
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: -10px;
+}
+
+.card-content h3,
+.card-content p {
+    margin-top: 5px;  
+    margin-bottom: 5px;
+}
+
+.activites {
+    width: 100%;
+    height: 559.02px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.activites h2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.bloc-activites {
+    height: 439px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+.bloc-activites a {
+    width: 22%;
+}
+.bloc-activites .card {
+    width: 100%;
+    height: 439px;
+    border-radius: 20px;
+    background-color: white;
+}
+.bloc-activites .card img {
+    width: 100%;
+    height: 88%;
+    border-radius: 20px 20px 0px 0px;
+}
+.bloc-activites .card .card-txt {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+footer {
+    width: 100%;
+    height: 163px;
+    background: #F2F2F2;
+    display: flex;
+}
+
+.apropos, .foothebergement, .assistance {
+    width: 33%;
+    gap: 15px; 
+    margin-top: 20px;
+    margin-left: 20px;
 }
