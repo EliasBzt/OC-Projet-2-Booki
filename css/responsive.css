@@ -48,6 +48,8 @@
     .filtres {
         position: relative;
         margin-top: 80px;
+        gap: 0;
+        width: auto;
     }
     
     .text-filtres {
@@ -60,7 +62,11 @@
     /* Décaler tous les boutons sauf le dernier vers la droite */
     /* Décaler tous les boutons vers la droite */
     .filtres-boutons {
-        margin-right: 63px;
+       
+    }
+
+    .filtres button {
+        font-size: 16px;
     }
     .activites {
         width: 100%; 
@@ -69,7 +75,6 @@
 
     .bloc-activites { 
         height: 270px;
-
     }
     .bloc-activites a {
         width: 21%;
@@ -83,6 +88,19 @@
     .bloc-activites .card img {
         height: 200px;
         
+    }
+    .economique {
+        width: 167px;
+    }
+    .familial {
+        width: 131px;
+    }
+    
+    .romantique {
+        width: 164px;
+    }
+    .pepites{
+        width: 161px;
     }
 
 }    
@@ -131,6 +149,9 @@
         margin-bottom: 30px;
     }
 
+    .economique, .familial, .romantique, .pepites {
+        width: 162.5px;
+    }
     .hebergement, .activite {
         width: 50%;
         font-size: 19px;
@@ -164,6 +185,12 @@
         display: none;
     }
 
+    .info {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
     .search-bar-mobile {
         display: inline;
     }
@@ -182,16 +209,34 @@
     }
 
     .filtres-boutons{
-        /*width: 100%;*/
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 60px;
 
+    }
+    .text-filtres {
+        margin-left: 10%;
+    }
+    .logements-txt {
+        margin-top: 65px;
+        display: flex;
+    }
+    .logements-txt i {
+        margin-left: 10px;
+    }
+
+    .filtres button {
+        font-size: 15px;
     }
 
     .filtres {
         width: auto;
     }
 
+    .hebergements-and-populaires {
+        margin: 0;
+    }
 
     .populaires .populaires-cards {
         display: flex;
@@ -349,3 +394,4 @@
     }
 
 }
+
