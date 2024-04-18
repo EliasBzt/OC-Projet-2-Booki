@@ -80,8 +80,13 @@ nav a:hover {
     border: none;
     color: #FFFFFF;
 }
+.search-button:hover {
+    cursor: pointer;
+}
+
 .filtres button:hover {
     background: #DEEBFF;
+    cursor: pointer;
 }
 
 .filtres i {
@@ -109,8 +114,8 @@ nav a:hover {
     top: -8px;
     width: 63px;
     height: 2px;
-    opacity: 0;
     background: #0065FC;
+    opacity: 0;
 }
 .activite:hover::before {
     opacity: 1;
@@ -124,8 +129,8 @@ nav a:hover {
     top: -8px;
     width: 113px;
     height: 2px;
-    opacity: 0;
     background: #0065FC;
+    opacity: 0;
 }
 .hebergement:hover::before {
     opacity: 1;
@@ -134,7 +139,6 @@ nav a:hover {
     width: 758px;
     height: 50px;
     gap: 15px;
-    opacity: 0px;
     margin-bottom: 35px;
     display: flex;
     align-items: center;
@@ -154,7 +158,6 @@ nav a:hover {
     gap: 10px;
     border-radius: 25px;
     border: 2px;
-    opacity: 0px;    
     border: 2px solid #D9D9D9;
     background-color: #FFFFFF;
 
@@ -166,7 +169,6 @@ nav a:hover {
     gap: 10px;
     border-radius: 25px;
     border: 2px;
-    opacity: 0px;
     border: 2px solid #D9D9D9;
     background-color: #FFFFFF;
 
@@ -178,8 +180,7 @@ nav a:hover {
     padding: 4px 19px 4px 19px;
     gap: 10px;
     border-radius: 25px;
-    border: 2px;
-    opacity: 0px;      
+    border: 2px;      
     border: 2px solid #D9D9D9;
     background-color: #FFFFFF;
 
@@ -190,8 +191,7 @@ nav a:hover {
     padding: 4px 19px 4px 19px;
     gap: 10px;
     border-radius: 25px;
-    border: 2px;
-    opacity: 0px;        
+    border: 2px;        
     border: 2px solid #D9D9D9;
     background-color: #FFFFFF;
 
