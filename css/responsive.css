@@ -59,11 +59,6 @@
         margin-bottom: 200px;
 
     }
-    /* Décaler tous les boutons sauf le dernier vers la droite */
-    /* Décaler tous les boutons vers la droite */
-    .filtres-boutons {
-       
-    }
 
     .filtres button {
         font-size: 16px;
@@ -150,7 +145,8 @@
     }
 
     .economique, .familial, .romantique, .pepites {
-        width: 162.5px;
+        width: 47%;
+        padding: 4px 12px 4px 12px;
     }
     .hebergement, .activite {
         width: 50%;
@@ -394,4 +390,3 @@
     }
 
 }
-
